@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наставничество</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #444;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .form-group textarea {
+            resize: vertical;
+        }
+        .form-group button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Наставничество</h1>
+        <p>Наставничество — это эффективный способ делиться знаниями, опытом и навыками. Это не только помощь в развитии профессиональных навыков, но и поддержка на пути к достижению личных и профессиональных целей.</p>
+
+        <h2>Опросник</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="goals">Ваши цели в наставничестве:</label>
+                <textarea id="goals" name="goals" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="area">В какой области вы хотите развиваться?</label>
+                <select id="area" name="area" required>
+                    <option value="career">Карьера</option>
+                    <option value="personal_growth">Личностный рост</option>
+                    <option value="skills">Навыки</option>
+                    <option value="other">Другое</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="availability">Сколько времени вы готовы уделять наставничеству?</label>
+                <select id="availability" name="availability" required>
+                    <option value="1_hour">1 час в неделю</option>
+                    <option value="2_hours">2 часа в неделю</option>
+                    <option value="5_hours">5 часов в неделю</option>
+                    <option value="flexible">Гибкий график</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Отправить запрос</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
